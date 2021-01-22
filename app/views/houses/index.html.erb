@@ -1,0 +1,8 @@
+<%if @houses.empty?%>
+  <p>there is no houses</p>
+ 
+<%else%>
+ <%@houses.each do |house|%>
+ <h2><%= house.name %></h2>
+ <%end%>
+<%end%>
