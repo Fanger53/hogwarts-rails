@@ -3,6 +3,10 @@
  
 <%else%>
  <%@houses.each do |house|%>
- <h2><%= house.name %></h2>
+  <h2><%= house.name %></h2>
+  <p>there are <%= house.students.count %> students in the house </p>
+  <p>
+    this house have <%= house.points %> points
+  </p>
  <%end%>
 <%end%>
